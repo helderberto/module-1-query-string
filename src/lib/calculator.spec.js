@@ -1,4 +1,4 @@
-const {sum} = require('./calculator');
+const { sum } = require('./calculator');
 
 it('should sum 2 + 2 and the result must be 4', () => {
   expect(sum(2, 2)).toBe(4);
@@ -6,7 +6,7 @@ it('should sum 2 + 2 and the result must be 4', () => {
 
 it('should sum 2 + 2 even if values is strings', () => {
   expect(sum('2', '2')).toBe(4);
-})
+});
 
 it('should throw an error if what is provided is not numbers', () => {
   expect(() => sum('', 2)).toThrowError();

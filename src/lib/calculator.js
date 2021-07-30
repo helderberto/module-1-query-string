@@ -9,4 +9,4 @@ function sum(x, y) {
   return parsedX + parsedY;
 }
 
-module.exports = {sum};
+module.exports = { sum };
