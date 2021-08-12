@@ -7,4 +7,11 @@ describe('Query object to string', () => {
 
     expect(queryString(obj)).toBe(expected);
   });
+
+  it('should create a valid query string even when an array is passed a value', () => {
+    const obj = { name: 'Helder', skills: ['JS', 'TDD'] };
+    const expected = 'name=Helder&skills=JS,TDD';
+
+    expect(queryString(obj)).toBe(expected);
+  });
 });
