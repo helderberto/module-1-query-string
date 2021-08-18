@@ -32,4 +32,10 @@ describe('Query object to string', () => {
 
     expect(parse(qs)).toEqual({ name: 'Helder' });
   });
+
+  it('should convert a query string to an object taking care of comma separation', () => {
+    const qs = 'name=Helder&skills=JS,TDD';
+
+    expect(parse(qs)).toEqual({ name: 'Helder', skills: ['JS', 'TDD'] });
+  });
 });
