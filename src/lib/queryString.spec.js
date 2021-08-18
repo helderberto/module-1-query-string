@@ -26,4 +26,10 @@ describe('Query object to string', () => {
 
     expect(parse(qs)).toEqual({ name: 'Helder', role: 'developer' });
   });
+
+  it('should convert a query string of a single key-value pair to an object', () => {
+    const qs = 'name=Helder';
+
+    expect(parse(qs)).toEqual({ name: 'Helder' });
+  });
 });
