@@ -1,4 +1,4 @@
-import { queryString, parse } from './queryString';
+import { queryString, parse } from '../queryString';
 
 describe('Query object to string', () => {
   it('should create a valid query string when an object is provided', () => {
