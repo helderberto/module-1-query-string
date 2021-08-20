@@ -2,11 +2,13 @@
   "name": "project-01",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/types/index.js",
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watchAll",
-    "build": "tsc"
+    "build:clean": "rm -rf ./dist",
+    "build": "npm run build:clean && tsc"
   },
   "keywords": [],
   "author": "",
