@@ -7,8 +7,8 @@
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watchAll",
-    "lint": "npx eslint . --ext .js,.ts",
-    "format": "npx prettier --write src/",
+    "lint": "eslint . --ext .js,.ts",
+    "format": "prettier --write .",
     "build:clean": "rm -rf ./dist",
     "build": "npm run build:clean && tsc",
     "prepare": "husky install",

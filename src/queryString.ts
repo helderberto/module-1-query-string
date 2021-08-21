@@ -13,7 +13,7 @@ export const queryString = (o: object): string =>
 export const parse = (s: string): object =>
   Object.fromEntries(
     s.split('&').map(item => {
-      let [key, value] = item.split('=');
+      const [key, value] = item.split('=');
       if (value.indexOf(',') > -1) {
         const values = value.split(',');
         return [key, values];
