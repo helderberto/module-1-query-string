@@ -1,9 +1,13 @@
 module.exports = {
+  verbose: true,
+  collectCoverage: true,
+  coverageDirectory: './coverage',
+  roots: ['<rootDir>/src'],
   globals: {
     'ts-jest': {
+      tsconfig: 'tsconfig.json',
       babelConfig: false,
-      tsConfig: 'tsconfig.json',
     },
-    testPathIgnorePatterns: ['/node_modules/', 'build'],
   },
+  preset: 'ts-jest/presets/js-with-ts',
 };
