@@ -9,7 +9,8 @@
     "test:coverage": "jest --coverage",
     "test:watch": "jest --watchAll",
     "build:clean": "rm -rf ./dist",
-    "build": "npm run build:clean && tsc"
+    "build": "npm run build:clean && tsc",
+    "validate": "npm run test:coverage && npm run build"
   },
   "keywords": [],
   "author": "",
